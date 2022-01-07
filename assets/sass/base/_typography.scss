@@ -9,7 +9,8 @@
 
 /**Font Size & Font Family**/
 body {
-  background-color: #f9f9f9;
+  background-color: $color-dark;
+  color: $color-gray;
 }
 
 h1,
@@ -116,10 +117,9 @@ span,
 label {
   margin: 0px;
   font-size: 16px;
-  line-height: 150%;
-  color: $color-gray01;
+  line-height: 21px;
 
-  @media #{$max1366} {
+  @media #{$max1280} {
     font-size: 14px;
   }
 }
@@ -141,5 +141,13 @@ ol {
 
   li {
     list-style-type: none;
+  }
+}
+.btn,
+button {
+  padding: 14px 16px !important;
+  line-height: 21px;
+  &:focus {
+    box-shadow: none;
   }
 }

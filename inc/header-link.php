@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="HTML5,CSS3,SASS,Bootstrap,JavaScript,Jquery">
-    <meta name="author" content="ITCLAN BD" />
-    <title>Clan Dash</title>
+    <meta name="author" content="CODECONJURING" />
+    <title>instanly</title>
     <!-- Favicon -->
     <link rel="icon" href="assets/images/logo/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">

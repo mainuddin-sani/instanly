@@ -17,6 +17,52 @@ Please DO NOT EDIT THIS CSS, you may need to use "custom.css".
 **/
 /**Base SCSS**/
 /**Mixin**/
+/**color Variable**/
+.navbar-brand img {
+  max-width: 150px; }
+
+.navbar-light .container {
+  position: relative;
+  padding: 11px 0; }
+  .navbar-light .container::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 0%);
+    height: 1px;
+    background: rgba(155, 155, 155, 0.365); }
+.navbar-light .navbar-nav {
+  align-items: center; }
+  .navbar-light .navbar-nav .nav-item {
+    padding: 0.5rem 1.5rem; }
+    .navbar-light .navbar-nav .nav-item .nav-link {
+      color: #9b9b9b;
+      padding: 0;
+      position: relative; }
+      .navbar-light .navbar-nav .nav-item .nav-link:hover {
+        color: #fff; }
+      .navbar-light .navbar-nav .nav-item .nav-link.btn {
+        color: #fff;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px; }
+      .navbar-light .navbar-nav .nav-item .nav-link::after {
+        position: absolute;
+        content: "";
+        bottom: -33px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #10d078;
+        opacity: 0; }
+      .navbar-light .navbar-nav .nav-item .nav-link.active {
+        color: #fff; }
+        .navbar-light .navbar-nav .nav-item .nav-link.active::after {
+          opacity: 1; }
+    .navbar-light .navbar-nav .nav-item .show > .nav-link {
+      color: #9b9b9b; }
+
 * {
   padding: 0px;
   margin: 0px; }
@@ -25,7 +71,8 @@ Please DO NOT EDIT THIS CSS, you may need to use "custom.css".
 /**color Variable**/
 /**Font Size & Font Family**/
 body {
-  background-color: #f9f9f9; }
+  background-color: #181c1f;
+  color: #9b9b9b; }
 
 h1,
 h2,
@@ -107,9 +154,8 @@ span,
 label {
   margin: 0px;
   font-size: 16px;
-  line-height: 150%;
-  color: #8A8888; }
-  @media only screen and (max-width: 1366px) {
+  line-height: 21px; }
+  @media only screen and (max-width: 1280px) {
     p,
     a,
     span,
@@ -131,6 +177,14 @@ ol {
   ul li,
   ol li {
     list-style-type: none; }
+
+.btn,
+button {
+  padding: 14px 16px !important;
+  line-height: 21px; }
+  .btn:focus,
+  button:focus {
+    box-shadow: none; }
 
 /**color Variable**/
 /**Default Padding**/
@@ -718,85 +772,138 @@ ol {
 .ic-col-p {
   padding: 0px; }
 
-.bg-gradient-secondary {
-  background: linear-gradient(90deg, #3d42aa 0%, #686ff1 100%); }
+.cc_sidebar_head {
+  margin-top: 60px;
+  display: flex; }
+  .cc_sidebar_head .cc_sidebar_left {
+    flex: 0 0 30%;
+    flex-shrink: calc(100% - 30%); }
+    .cc_sidebar_head .cc_sidebar_left .sidebar__inner ul li {
+      position: relative; }
+      .cc_sidebar_head .cc_sidebar_left .sidebar__inner ul li a {
+        padding: 10px 0;
+        color: #9b9b9b;
+        display: block; }
+        .cc_sidebar_head .cc_sidebar_left .sidebar__inner ul li a::before {
+          position: absolute;
+          content: "";
+          top: calc(50% - 1px);
+          left: -250%;
+          right: 350%;
+          height: 1px;
+          background: #fff;
+          transition: right 0.5s ease-in-out; }
+        .cc_sidebar_head .cc_sidebar_left .sidebar__inner ul li a.active {
+          font-size: 18px;
+          color: #fff;
+          font-weight: 600; }
+          .cc_sidebar_head .cc_sidebar_left .sidebar__inner ul li a.active::before {
+            right: calc(100% + 15px); }
+  .cc_sidebar_head .cc_sidebar_right {
+    flex: 0 0 70%; }
 
-.bg-gradient-info {
-  background: linear-gradient(90deg, #257dce 0%, #1890ff 100%); }
+.ic-inner-items {
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  cursor: pointer;
+  background: #252d32;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .ic-inner-items:hover {
+    background: #2e393f; }
+  .ic-inner-items h3 {
+    color: #fff;
+    text-transform: uppercase; }
+  .ic-inner-items.cc_Changelly {
+    padding: 0; }
+    .ic-inner-items.cc_Changelly img {
+      -webkit-border-radius: 10px 10px 0 0;
+      -moz-border-radius: 10px 10px 0 0;
+      border-radius: 10px 10px 0 0; }
+    .ic-inner-items.cc_Changelly .cc_content {
+      padding: 20px 30px 30px 30px; }
 
-.bg-gradient-warning {
-  background: linear-gradient(90deg, #ffbf2e 0%, #efcb79 100%); }
+.cc_content_main {
+  margin-top: 30px; }
 
-.bg-gradient-danger {
-  background: linear-gradient(90deg, #ff5c66 0%, #f4878e 100%); }
+.cc_more-btn {
+  position: relative; }
+  .cc_more-btn::before {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    border-bottom: 1px dashed #10d078; }
 
-.bg-gradient-success {
-  background: linear-gradient(90deg, #04d182 0%, #3af2ab 100%); }
+.cc_section_heads {
+  padding: 100px 0;
+  border-bottom: 1px solid rgba(155, 155, 155, 0.365); }
 
-.bg-primary {
-  background-color: #3BC5C4 !important; }
+.cc_content p {
+  color: #9b9b9b; }
 
-.bg-seconday {
-  background-color: #3D42AA !important; }
+.cc_cryptocurrency {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px; }
 
-.bg-info {
-  background-color: #1890FF !important; }
+.cc_cryptocurrency_items {
+  padding: 30px;
+  border-radius: 8px;
+  background: #20262a;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .cc_cryptocurrency_items:hover {
+    background: #2e393f; }
+  .cc_cryptocurrency_items h1 {
+    color: #20262a;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    padding-bottom: 10px; }
+  .cc_cryptocurrency_items h3 {
+    padding-bottom: 8px; }
+  .cc_cryptocurrency_items p {
+    color: #9b9b9b; }
 
-.bg-success {
-  background-color: #04d182 !important; }
+.img-div {
+  display: flex;
+  grid-gap: 30px; }
+  .img-div p {
+    color: #fff !important;
+    font-weight: 600; }
+  .img-div span {
+    color: #9b9b9b; }
 
-.bg-warning {
-  background-color: #FFBF2E !important; }
+.cc_Join_for {
+  margin: 100px 0; }
 
-.bg-danger {
-  background-color: #FF5C66 !important; }
-
-.bg-primary-soft {
-  background-color: #EDFCFC !important; }
-
-.bg-white {
-  background-color: #FFFFFF; }
-
-.text-primary {
-  color: #3BC5C4; }
-
-.text-seconday {
-  color: #3D42AA; }
-
-.text-info {
-  color: #1890FF; }
-
-.text-success {
-  color: #04d182; }
-
-.text-warning {
-  color: #FFBF2E; }
-
-.text-danger {
-  color: #FF5C66; }
-
-.text-gray-2 {
-  color: #D1D1D1; }
-
-.border-primary {
-  border: 2px solid #3BC5C4; }
-
-.border-seconday {
-  border: 2px solid #3D42AA; }
-
-.border-info {
-  border: 2px solid #1890FF; }
-
-.border-success {
-  border: 2px solid #04d182; }
-
-.border-warning {
-  border: 2px solid #FFBF2E; }
-
-.border-danger {
-  border: 2px solid #FF5C66; }
-
-.border-white {
-  border: 2px solid #FFFFFF; }
+.cc_names__subscribe {
+  overflow: hidden;
+  display: flex; }
+  .cc_names__subscribe .cc_newslatter {
+    display: flex;
+    flex-direction: column;
+    flex: 3 3;
+    margin: 0 21px 0 0; }
+  .cc_names__subscribe .cc_img_newslatter {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 0 21px; }
+    .cc_names__subscribe .cc_img_newslatter img {
+      width: 100%;
+      height: 100%;
+      max-width: 338px;
+      max-height: 144px;
+      transform: translateX(8px);
+      transition: transform 0.3s ease;
+      margin-bottom: 8px; }
+      .cc_names__subscribe .cc_img_newslatter img:hover {
+        transform: translateX(0); }
 
 /*# sourceMappingURL=style.css.map */
