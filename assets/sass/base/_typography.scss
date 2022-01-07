@@ -1,0 +1,145 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/**Fonts**/
+
+@import "./variable";
+
+/**Font Size & Font Family**/
+body {
+  background-color: #f9f9f9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 110%;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 110%;
+
+  span {
+    @extend h2;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 120%;
+
+  @media #{$max1366} {
+    font-size: 28px;
+  }
+
+  @media #{$max575} {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 28px;
+  line-height: 120%;
+
+  @media #{$max1366} {
+    font-size: 23px;
+  }
+}
+
+.ic-h4-2 {
+  font-size: 28px;
+  line-height: 120%;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 130%;
+
+  @media #{$max1366} {
+    font-size: 20px;
+  }
+
+  @media #{$max575} {
+    font-size: 18px;
+  }
+
+  @media #{$max1366} {
+    font-size: 22px;
+  }
+
+  @media #{$max767} {
+    font-size: 20px;
+  }
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 130%;
+
+  @media #{$max1366} {
+    font-size: 16px;
+  }
+
+  @media #{$max1199} {
+    font-size: 15px;
+  }
+}
+
+.ic-h6-2 {
+  font-size: 20px;
+  line-height: 130%;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: unset;
+    text-decoration: none;
+  }
+}
+
+p,
+a,
+span,
+label {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 150%;
+  color: $color-gray01;
+
+  @media #{$max1366} {
+    font-size: 14px;
+  }
+}
+
+.ic-p2 {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.ic-p3 {
+  font-size: auto;
+  line-height: 150%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0px;
+
+  li {
+    list-style-type: none;
+  }
+}
