@@ -50,13 +50,13 @@ Please DO NOT EDIT THIS JS, you may need to use "custom.js".
 /*========================================
     back-to-top
     ========================================*/
-    // var html_body = $('html,body');
-    // var backTotop = $(".ic-back-to-top");
-    // backTotop.on('click', function() {
-    //     html_body.animate({
-    //         scrollTop: 0
-    //     }, 1000)
-    // });
+    var html_body = $('html,body');
+    var backTotop = $(".cc_main-top");
+    backTotop.on('click', function() {
+        html_body.animate({
+            scrollTop: 0
+        }, 1000)
+    });
 
     $(window).on('scroll', function() {
         var scrolling = $(this).scrollTop();
@@ -65,11 +65,11 @@ Please DO NOT EDIT THIS JS, you may need to use "custom.js".
         } else {
             $('.navbar-light').removeClass('animated fadeInDown active');
         }
-        // if (scrolling > 300) {
-        //     backTotop.fadeIn(300);
-        // } else {
-        //     backTotop.fadeOut(300);
-        // }
+        if (scrolling > 100) {
+            backTotop.fadeIn(300);
+        } else {
+            backTotop.fadeOut(300);
+        }
     });
  
 
@@ -80,10 +80,63 @@ Please DO NOT EDIT THIS JS, you may need to use "custom.js".
 
     var a = new StickySidebar('#sidebar', {
 			topSpacing: 20,
-			bottomSpacing: 20,
-			containerSelector: '.container',
+			// bottomSpacing: 20,
+			// containerSelector: '.container',
 			innerWrapperSelector: '.sidebar__inner'
 		});
+
+
+
+    $(document).on('click', function(event) {
+       if (!$(event.target).closest(".selectBtn").length) {
+           $(".selectDropdown").removeClass("toggle");
+       }
+   });
+
+  //  $(".cc_forms_content-items").hide();
+   $('.form-items').on('click', function(){
+    $('.form-items').removeClass('active');
+    $(this).addClass('active');
+    $(".cc_forms_content-items").hide();
+      var id = $(this).data("volume");
+      $("#" + id).fadeIn();
+   });
+
+   $('.cc_more-btn').on('click', function(){
+      $('.cc_items-toggle-hides').slideToggle();
+      if( $(this).text() === "Show More" ) {
+        $(this).text('Hide');
+      }else {
+        $(this).text('Show More');
+      }
+      
+   });
+
+   $('.cc_select').ddslick({
+      imagePosition: "left",
+      selectText: "Select your favorite social network",
+  });
+   $('.cc_select2').ddslick({
+      imagePosition: "left",
+      selectText: "Select your favorite social network",
+  });
+   $('.cc_select3').ddslick({
+      imagePosition: "left",
+      selectText: "Select your favorite social network",
+  });
+   $('.cc_select4').ddslick({
+      imagePosition: "left",
+      selectText: "Select your favorite social network",
+  });
+   $('.cc_select5').ddslick({
+      imagePosition: "left",
+      selectText: "Select your favorite social network",
+  });
+   $('.cc_select6').ddslick({
+      imagePosition: "left",
+      selectText: "Select your favorite social network",
+  });
+
 
 
   /**Jquery End **/
