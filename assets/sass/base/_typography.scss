@@ -10,7 +10,6 @@
 /**Font Size & Font Family**/
 body {
   background-color: $color-dark;
-  color: $color-gray;
 }
 
 h1,
@@ -20,6 +19,7 @@ h4,
 h5,
 h6 {
   margin: 0px;
+  color: #fff;
 }
 
 h1 {
@@ -118,6 +118,7 @@ label {
   margin: 0px;
   font-size: 16px;
   line-height: 21px;
+  color: $color-gray;
 
   @media #{$max1280} {
     font-size: 14px;

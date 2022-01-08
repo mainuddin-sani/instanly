@@ -34,6 +34,11 @@
         }
       }
     }
+    &.is-affixed {
+      .sidebar__inner {
+        margin-top: 90px;
+      }
+    }
   }
   .cc_sidebar_right {
     flex: 0 0 70%;

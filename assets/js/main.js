@@ -42,33 +42,35 @@ Please DO NOT EDIT THIS JS, you may need to use "custom.js".
 
   
 
-  if ($(window).width() < 1200) {
-    $("body").addClass("ic-mini-sidebar");
-  }
-  $(".ic-nav-collapse").on("click", function () {
-    $("body").addClass("ic-mini-sidebar");
-    $(this).hide();
-    $(".ic-sidebar-cancel").show();
-  });
-  $(".ic-sidebar-cancel").on("click", function () {
-    $("body").removeClass("ic-mini-sidebar");
-    $(this).hide();
-    $(".ic-nav-collapse").show();
-  });
-  $(".ic-mobile-nav-collapse").on("click", function () {
-    $("body").removeClass("ic-mini-sidebar");
-    $(".ic-mobile-sidebar-close").show();
-  });
-  $(".ic-mobile-sidebar-close").on("click", function () {
-    $("body").addClass("ic-mini-sidebar");
-    $(this).hide();
-  });
 
   /*========================================
         Menu itemToggle
     ========================================*/
 
+/*========================================
+    back-to-top
+    ========================================*/
+    // var html_body = $('html,body');
+    // var backTotop = $(".ic-back-to-top");
+    // backTotop.on('click', function() {
+    //     html_body.animate({
+    //         scrollTop: 0
+    //     }, 1000)
+    // });
 
+    $(window).on('scroll', function() {
+        var scrolling = $(this).scrollTop();
+        if (scrolling > 30) {
+            $('.navbar-light').addClass('animated fadeInDown active');
+        } else {
+            $('.navbar-light').removeClass('animated fadeInDown active');
+        }
+        // if (scrolling > 300) {
+        //     backTotop.fadeIn(300);
+        // } else {
+        //     backTotop.fadeOut(300);
+        // }
+    });
  
 
  

@@ -1,26 +1,16 @@
-/*===============================================
-
-Theme Name: Clan Dash Admin Template 
-Version:1.0
-Author: ITCLAN
-Support: itclan@gmail.com
-Description:Clan Dash Admin Template
-
-NOTE:
-=====
-Please DO NOT EDIT THIS CSS, you may need to use "custom.css".
-
-==============================================*/
-/**====================
-    1. Theme Default CSS
-========================
-**/
 /**Base SCSS**/
 /**Mixin**/
 /**color Variable**/
 .navbar-brand img {
   max-width: 150px; }
 
+.navbar-light.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background: #181c1f; }
 .navbar-light .container {
   position: relative;
   padding: 11px 0; }
@@ -71,8 +61,7 @@ Please DO NOT EDIT THIS CSS, you may need to use "custom.css".
 /**color Variable**/
 /**Font Size & Font Family**/
 body {
-  background-color: #181c1f;
-  color: #9b9b9b; }
+  background-color: #181c1f; }
 
 h1,
 h2,
@@ -81,7 +70,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0px; }
+  margin: 0px;
+  color: #fff; }
 
 h1 {
   font-size: 56px;
@@ -154,7 +144,8 @@ span,
 label {
   margin: 0px;
   font-size: 16px;
-  line-height: 21px; }
+  line-height: 21px;
+  color: #9b9b9b; }
   @media only screen and (max-width: 1280px) {
     p,
     a,
@@ -799,6 +790,8 @@ button {
           font-weight: 600; }
           .cc_sidebar_head .cc_sidebar_left .sidebar__inner ul li a.active::before {
             right: calc(100% + 15px); }
+    .cc_sidebar_head .cc_sidebar_left.is-affixed .sidebar__inner {
+      margin-top: 90px; }
   .cc_sidebar_head .cc_sidebar_right {
     flex: 0 0 70%; }
 
