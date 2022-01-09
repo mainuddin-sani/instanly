@@ -30,7 +30,9 @@ h1 {
 h2 {
   font-size: 40px;
   line-height: 110%;
-
+  @media #{$max991} {
+    font-size: 28px;
+  }
   span {
     @extend h2;
   }
@@ -55,6 +57,9 @@ h4 {
 
   @media #{$max1366} {
     font-size: 23px;
+  }
+  @media #{$max767} {
+    font-size: 16px;
   }
 }
 

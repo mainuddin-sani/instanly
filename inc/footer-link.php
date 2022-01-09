@@ -4,7 +4,9 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <!--Feather Icon-->
 <script src="assets/css/icons/feather.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/jquery.ddslick.min.js"></script>
+<script src="assets/js/countrySelect.min.js"></script>
 <!--sidebar sticky Icon-->
 <script src="assets/js/rAF.js"></script>
 <script src="assets/js/ResizeSensor.js"></script>

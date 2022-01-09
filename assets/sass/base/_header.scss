@@ -2,21 +2,52 @@
 .navbar-brand {
   img {
     max-width: 150px;
+    @media (max-width: 991px) {
+      max-width: 113px;
+    }
   }
 }
-
+@media (max-width: 991px) {
+  .navbar-toggler {
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+    i {
+      color: #fff;
+    }
+  }
+  .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    background: $color-dark;
+    z-index: 999;
+    left: 0;
+    // &.show {
+    //   position: absolute;
+    //   width: 100%;
+    //   top: 60px;
+    //   background: $color-dark;
+    //   z-index: 999;
+    // }
+  }
+}
 .navbar-light {
   &.active {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 999;
     background: #181c1f;
   }
   .container {
     position: relative;
     padding: 11px 0;
+    @media (max-width: 767px) {
+      padding: 11px 20px;
+    }
     &::after {
       position: absolute;
       content: "";
@@ -35,7 +66,7 @@
         color: $color-gray;
         padding: 0;
         &:hover {
-          color: #fff;
+          color: $color-greeen;
         }
         position: relative;
         &.btn {
@@ -51,9 +82,12 @@
           height: 2px;
           background: $color-greeen;
           opacity: 0;
+          @media (max-width: 991px) {
+            bottom: -5px;
+          }
         }
         &.active {
-          color: #fff;
+          color: $color-greeen;
           &::after {
             opacity: 1;
           }

@@ -178,16 +178,27 @@
             </div>
         </div>
         <div class="cc_last-footer">
-           <div class="cc_social">
-           <a href="#"><i class="ri-facebook-box-fill"></i></a>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-            <a href="#"><i class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-telegram-fill"></i></a>
-            <a href="#"><i class="ri-youtube-fill"></i></a>
-            <a href="#"><i class="ri-linkedin-box-fill"></i></a>
-            <a href="#"><i class="ri-reddit-line"></i></a>
-            <a href="#"><i class="ri-github-fill"></i></a>
-           </div>
+            <div class="cc_social">
+                <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                <a href="#"><i class="ri-twitter-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+                <a href="#"><i class="ri-telegram-fill"></i></a>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+                <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                <a href="#"><i class="ri-reddit-line"></i></a>
+                <a href="#"><i class="ri-github-fill"></i></a>
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="ri-global-line"></i> English
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">Francais</a></li>
+                    <li><a class="dropdown-item" href="#">Protugues</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>

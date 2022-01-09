@@ -80,8 +80,6 @@ Please DO NOT EDIT THIS JS, you may need to use "custom.js".
 
     var a = new StickySidebar('#sidebar', {
 			topSpacing: 20,
-			// bottomSpacing: 20,
-			// containerSelector: '.container',
 			innerWrapperSelector: '.sidebar__inner'
 		});
 
@@ -136,6 +134,34 @@ Please DO NOT EDIT THIS JS, you may need to use "custom.js".
       imagePosition: "left",
       selectText: "Select your favorite social network",
   });
+
+  $("#country_selector").countrySelect({
+    preferredCountries: ['ca', 'gb', 'us']
+  });
+
+  // slider
+  $('.cc_payment-method-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    dots: false,
+    responsiveClass:true,
+    navText: ["<i class='ri-arrow-left-s-line'></i>","<i class='ri-arrow-right-s-line'></i>"],
+    responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+})
 
 
 
