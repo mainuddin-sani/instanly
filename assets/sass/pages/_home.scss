@@ -1,3 +1,5 @@
+// .banner-part {
+// }
 .cc_sidebar_head {
   margin-top: 60px;
   display: flex;
@@ -140,6 +142,8 @@
   }
 }
 .cc_section_heads {
+  background: url(/assets/images/coins-bg.svg) 13% -17% no-repeat;
+  background-size: contain;
   padding: 100px 0;
   border-bottom: 1px solid rgba(155, 155, 155, 0.365);
   @media (max-width: 991px) {
@@ -263,7 +267,16 @@
   }
 }
 .cc_footer-heads {
-  background: $color-dark4;
+  background: $color-dark4 url(/assets/images/bg-contact.png) 0 100% no-repeat;
+}
+
+.img-circle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translatex(-50%);
+  max-width: 25%;
+  opacity: 0.2;
 }
 .cc_footer-top-content {
   padding: 32px 0;
@@ -509,6 +522,7 @@
 }
 
 .cc_form_heads {
+  background: url(/assets/images/coins-bg.svg) 13% -17% no-repeat;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 24px;
@@ -516,7 +530,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .cc_form-main-part {
-    background: $color-dark3;
+    background: rgba(46, 57, 63, 0.555);
     padding: 50px 30px;
     @include bd-radius(8px);
   }

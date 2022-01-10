@@ -18,7 +18,7 @@
     position: absolute;
     width: 100%;
     top: 60px;
-    background: #181c1f;
+    background: #252531;
     z-index: 999;
     left: 0; } }
 .navbar-light.active {
@@ -84,7 +84,10 @@
 /**color Variable**/
 /**Font Size & Font Family**/
 body {
-  background-color: #181c1f; }
+  background: #252531 url(/assets/images/Asset-1bg1-1.png) 0 9% no-repeat; }
+  @media (max-width: 1440px) {
+    body {
+      background: #252531 url(/assets/images/Asset-1bg1-1.png) 0 31% no-repeat; } }
 
 h1,
 h2,
@@ -864,7 +867,7 @@ button {
           margin-top: 46px;
           width: 100% !important; }
           .cc_sidebar_head .cc_sidebar_left.is-affixed .sidebar__inner ul {
-            background: #181c1f;
+            background: #252531;
             padding: 0 12px; } }
       @media (max-width: 575px) {
         .cc_sidebar_head .cc_sidebar_left.is-affixed .sidebar__inner {
@@ -916,6 +919,8 @@ button {
     border-bottom: 1px dashed #185fd7; }
 
 .cc_section_heads {
+  background: url(/assets/images/coins-bg.svg) 13% -17% no-repeat;
+  background-size: contain;
   padding: 100px 0;
   border-bottom: 1px solid rgba(155, 155, 155, 0.365); }
   @media (max-width: 991px) {
@@ -933,7 +938,7 @@ button {
 .cc_cryptocurrency_items {
   padding: 30px;
   border-radius: 8px;
-  background: #20262a;
+  background: #2b2b37;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -941,7 +946,7 @@ button {
   .cc_cryptocurrency_items:hover {
     background: #2e393f; }
   .cc_cryptocurrency_items h1 {
-    color: #20262a;
+    color: #2b2b37;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
     padding-bottom: 10px; }
   .cc_cryptocurrency_items h3 {
@@ -1016,7 +1021,15 @@ button {
     background-position: 0 100%; }
 
 .cc_footer-heads {
-  background: #20262a; }
+  background: #2b2b37 url(/assets/images/bg-contact.png) 0 100% no-repeat; }
+
+.img-circle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translatex(-50%);
+  max-width: 25%;
+  opacity: 0.2; }
 
 .cc_footer-top-content {
   padding: 32px 0;
@@ -1163,7 +1176,7 @@ button {
   .cc_form_nav li a.form-items {
     padding: 8px 14px;
     background: #fff;
-    color: #181c1f;
+    color: #252531;
     display: block; }
     @media (max-width: 1500px) {
       .cc_form_nav li a.form-items {
@@ -1222,6 +1235,7 @@ button {
   width: 318px !important; }
 
 .cc_form_heads {
+  background: url(/assets/images/coins-bg.svg) 13% -17% no-repeat;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 24px; }
@@ -1229,7 +1243,7 @@ button {
     .cc_form_heads {
       grid-template-columns: repeat(1, 1fr); } }
   .cc_form_heads .cc_form-main-part {
-    background: #2e393f;
+    background: rgba(46, 57, 63, 0.555);
     padding: 50px 30px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -1278,7 +1292,7 @@ button {
 
 .cc_slider-items {
   padding: 20px;
-  background: #20262a;
+  background: #2b2b37;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
@@ -1323,7 +1337,7 @@ button {
   padding-right: 6px;
   padding-left: 52px;
   margin-left: 0;
-  background: #20262a;
+  background: #2b2b37;
   color: #fff;
   border: none;
   height: 40px;
@@ -1341,7 +1355,7 @@ button {
   height: 32px;
   line-height: 45px;
   background: #ecf1f4;
-  color: #20262a;
+  color: #2b2b37;
   border: 0;
   border-radius: 100%;
   cursor: pointer;

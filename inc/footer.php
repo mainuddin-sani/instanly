@@ -2,7 +2,8 @@
 </div>
 
 <!-- footer  -->
-<section class="cc_footer-heads ic-mt-100">
+<section class="cc_footer-heads position-relative ic-mt-100">
+    <img src="assets/images/Group-789.png" class="img-circle" alt="circle">
     <div class="container">
         <div class="cc_footer-top-content">
             <span>Download our mobile app for your Android or iOS device</span>
