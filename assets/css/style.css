@@ -18,7 +18,7 @@
     position: absolute;
     width: 100%;
     top: 60px;
-    background: #252531;
+    background: #fff;
     z-index: 999;
     left: 0; } }
 .navbar-light.active {
@@ -27,7 +27,7 @@
   left: 0;
   width: 100%;
   z-index: 999;
-  background: #181c1f; }
+  background: #fff; }
 .navbar-light .container {
   position: relative;
   padding: 11px 0; }
@@ -84,10 +84,10 @@
 /**color Variable**/
 /**Font Size & Font Family**/
 body {
-  background: #252531 url(/assets/images/Asset-1bg1-1.png) 0 9% no-repeat; }
+  background: #142c8e url(/assets/images/Asset-1bg1-1.png) 0 9% no-repeat; }
   @media (max-width: 1440px) {
     body {
-      background: #252531 url(/assets/images/Asset-1bg1-1.png) 0 31% no-repeat; } }
+      background: #142c8e url(/assets/images/Asset-1bg1-1.png) 0 31% no-repeat; } }
 
 h1,
 h2,
@@ -794,6 +794,9 @@ button {
 
 .ic-col-p {
   padding: 0px; }
+
+.navbar {
+  background: #fff; }
 
 .cc_sidebar_head {
   margin-top: 60px;
